@@ -12,7 +12,6 @@
     "lint": "concurrently \"npm run lint:js\" \"npm run lint:css\" \"npm run lint:html\"",
     "predeploy": "npm run build",
     "deploy": "bash ./deploy.sh",
-    "pre-push": "npm test",
     "test": "jest ./src"
   },
   "keywords": [],
@@ -36,7 +35,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "npm run lint",
-      "pre-push": "npm run lint"
+      "pre-push": "npm test"
     }
   }
 }
