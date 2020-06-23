@@ -1,7 +1,7 @@
 # Generated
 node_modules
-.cache
 dist
+.cache
 
 # IDE
 .vscode
